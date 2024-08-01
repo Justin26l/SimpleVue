@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Vue.js Copy</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p>1. {{ message1 }}</p>
+    <p>2. {{ message2 }}</p>
+    <input model="message1">
+    <input model="message2">
+  </div>
+
+  <script>
+    new SimpleVue({
+      el: '#app',
+      data() {
+        return {
+          message1: 'Hello SimpleVue!',
+          message2: 'Hello SimpleVue!'
+        };
+      }
+    });
+  </script>
+</body>
+</html>
